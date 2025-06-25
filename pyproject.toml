@@ -4,26 +4,19 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "F2020"
+name = "TensorCollab"
 version = "0.1.0"
-description = "Paquete de apoyo para el curso F2020 Ecuaciones Diferenciales para la Física"
+description = "Package for the Tensor-Collab CAADi"
 authors = [
   { name = "Raul Gomez", email = "rgomez@tec.mx" }
 ]
 dependencies = [
   "numpy",
   "matplotlib",
-  "pyqt6",
-  "scipy",
+  "scipy"
 ]
 
 [project.scripts]
-rc_circuit = "rc_circuit.rc_circuit_main:main"
-taylor_coefficients = "taylor_coefficients.taylor_coefficients_main:main"
-taylor_series = "taylor_series_solution.taylor_series_main:main"
-frobenius_series = "frobenius_series_solution.frobenius_series_main:main"
-heat_equation = "heat_equation.heat_equation_main:main"
-wave_equation = "wave_equation.wave_equation_main:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
