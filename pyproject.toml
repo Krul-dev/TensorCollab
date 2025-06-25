@@ -13,7 +13,8 @@ authors = [
 dependencies = [
   "numpy",
   "matplotlib",
-  "scipy"
+  "scipy",
+  "tensorflow"
 ]
 
 [project.scripts]
