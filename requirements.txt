@@ -105,8 +105,6 @@ pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 python-json-logger==3.3.0
 pytz==2025.2
-pywin32==310
-pywinpty==2.0.15
 PyYAML==6.0.2
 pyzmq==27.0.0
 referencing==0.36.2
@@ -128,7 +126,7 @@ streamlit==1.46.1
 tenacity==9.1.2
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
--e git+https://github.com/Krul-dev/TensorCollab.git@47a6b77c294ddc3c5ba423819e0de300ceec1156#egg=TensorCollab
+-e git+https://github.com/Krul-dev/TensorCollab.git@ba2d919a8bd53fd1a27f8e89291d62c9b22be319#egg=TensorCollab
 tensorflow==2.19.0
 termcolor==3.1.0
 terminado==0.18.1
