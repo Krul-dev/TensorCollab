@@ -14,7 +14,13 @@ dependencies = [
   "numpy",
   "matplotlib",
   "scipy",
-  "tensorflow"
+  "tensorflow",
+  "pandas",
+  "jupyter",
+  "nbconvert",
+  "pyyaml",
+  "ipywidgets",
+  "scikit-learn"
 ]
 
 [project.scripts]

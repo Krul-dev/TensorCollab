@@ -1,0 +1,34 @@
+---
+title: |
+ Actividad 2
+
+format:
+   pdf:
+     pdf-engine: pdflatex
+     fontsize: 11pt
+
+highlight-style: tango 
+
+execute:
+  echo: true  # Set to false if you don't want code displayed
+---
+
+En este notebook desarrollaremos los ejercicioes de la actividad 2. Empezaremos escribiendo una función que calcula la suma de los primeros $n$ números.
+
+
+```{python}
+def summatorial(n):
+    """
+    Calculate the summatorial of a number n.
+    The summatorial of n is defined as the sum of all integers from 1 to n.
+    
+    :param n: The number to calculate the summatorial for.
+    :return: The summatorial of n.
+    """
+    if n < 0:
+        raise ValueError("n must be a non-negative integer")
+    return n * (n + 1) // 2
+
+summatorial(5)
+```
+
