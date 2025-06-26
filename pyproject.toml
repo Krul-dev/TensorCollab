@@ -20,7 +20,8 @@ dependencies = [
   "nbconvert",
   "pyyaml",
   "ipywidgets",
-  "scikit-learn"
+  "scikit-learn",
+  "streamlit"
 ]
 
 [project.scripts]
