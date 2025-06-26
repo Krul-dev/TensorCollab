@@ -125,9 +125,7 @@ stack-data==0.6.3
 streamlit==1.46.1
 tenacity==9.1.2
 tensorboard==2.19.0
-tensorboard-data-server==0.7.2
--e git+https://github.com/Krul-dev/TensorCollab.git@ba2d919a8bd53fd1a27f8e89291d62c9b22be319#egg=TensorCollab
-tensorflow==2.19.0
+tensorflow>=2.10,<2.14
 termcolor==3.1.0
 terminado==0.18.1
 threadpoolctl==3.6.0
