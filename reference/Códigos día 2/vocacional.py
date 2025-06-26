@@ -78,11 +78,13 @@ if st.session_state.finalizado:
         perfil = perfil_map.get(r)
         if perfil:
             conteo[perfil] += 1
-    perfil_final = max(conteo, key=conteo.get)
+    max_value = max(conteo.values())
+    perfil_final = [k for k, v in conteo.items() if v == max_value]
 
     st.success("✅ Test completado.")
-    st.markdown(f"### 🔎 Tu perfil vocacional dominante es: **{perfil_final.upper()}**")
-    st.info(recomendaciones[perfil_final])
+    for perfil in perfil_final:
+        st.markdown(f"### 🔎 Tu perfil vocacional dominante es: **{perfil.upper()}**")
+        st.info(recomendaciones[perfil])
 
     st.subheader("📋 Respuestas seleccionadas:")
     for i, r in enumerate(st.session_state.respuestas):
