@@ -67,6 +67,7 @@ if not st.session_state.finalizado:
 
         if st.button("Siguiente"):
             st.session_state.respuestas.append(seleccion)
+            st.rerun()
 
     if len(st.session_state.respuestas) == len(preguntas):
         st.session_state.finalizado = True
@@ -93,3 +94,4 @@ if st.session_state.finalizado:
     if st.button("🔄 Reiniciar"):
         st.session_state.respuestas = []
         st.session_state.finalizado = False
+        st.rerun()
