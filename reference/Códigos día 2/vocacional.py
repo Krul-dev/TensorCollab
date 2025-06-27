@@ -1,5 +1,4 @@
 import streamlit as st
-from TensorCollab import return_value_2
 
 # --- Preguntas y opciones ---
 preguntas = [
@@ -91,7 +90,6 @@ if st.session_state.finalizado:
     st.subheader("📋 Respuestas seleccionadas:")
     for i, r in enumerate(st.session_state.respuestas):
         st.write(f"{i+1}. {preguntas[i][0]} → {r}")
-        st.write(return_value_2())  # Llamada a la función del módulo TensorCollab  
 
     if st.button("🔄 Reiniciar"):
         st.session_state.respuestas = []
