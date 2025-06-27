@@ -147,3 +147,4 @@ wheel==0.45.1
 widgetsnbextension==4.0.14
 wrapt==1.17.2
 tensorflow>=2.10
+-e .
